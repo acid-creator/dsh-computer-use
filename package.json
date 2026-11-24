@@ -1,0 +1,27 @@
+{
+  "name": "@acid-creator/dsh-computer-use",
+  "version": "1.0.0",
+  "description": "Codex-style computer use for DeepSeek Harness: desktop control via Cua Driver and Chromium automation via Playwright MCP.",
+  "author": "acid-creator",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "computer-use",
+    "cua-driver",
+    "playwright",
+    "mcp",
+    "browser-automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acid-creator/dsh-computer-use.git"
+  },
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["cordis.patch.yml", "locale/*.json", "docs", "icon.svg"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
