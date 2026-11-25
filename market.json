@@ -26,11 +26,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1795464865,
+          "publishTimestamp": 1795610653,
           "source": {
             "type": "git",
             "url": "https://github.com/acid-creator/dsh-computer-use",
-            "commit": "<COMMIT_SHA>"
+            "commit": "d298adf231c00d9482b0882b2482b918de919ea5"
           },
           "engines": {}
         }
