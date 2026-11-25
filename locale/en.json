@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Computer use",
-    "description": "Codex-style computer use. Adds two MCP tool sets to the agent: desktop control through Cua Driver (screenshot, click, type, scroll, keys, drag, list windows) and Chromium automation through Playwright MCP (navigate, screenshot, click, type, scroll, snapshot). Desktop control requires the cua-driver executable on PATH (install with `pip install cua-driver`); browser control requires Playwright's Chromium (`npx playwright install chromium`). Tools appear as mcp__cua-driver-mcp__* and mcp__playwright__*. The agent can observe and operate the local desktop and a browser, including screenshots and input; turning the plugin off withdraws both tool sets.",
+    "description": "Codex-style computer use. Adds two MCP tool sets to the agent: desktop control through Cua Driver (screenshot, click, type, scroll, keys, drag, list windows) and Chromium automation through Playwright MCP (navigate, screenshot, click, type, scroll, snapshot). Both engines are installed automatically on first activation (cua-driver via pip; Playwright/Chromium in the background); install them manually if that fails. Tools are locked by default: unlock them with /computer-use (or the composer's computer-use command) before the agent can control the machine; the lock is restored when the task finishes. Tools appear as mcp__cua-driver-mcp__* and mcp__playwright__*. Turning the plugin off withdraws both tool sets.",
     "detail": "docs/DETAIL.md"
   }
 }

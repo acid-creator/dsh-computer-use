@@ -1,4 +1,7 @@
 - insert:
+    - id: computer-use-activity
+      name: '@acid-creator/dsh-computer-use'
+      config: {}
     - id: computer-use-cua-driver
       name: '@deepseek-ai/dsh-mcp-client'
       config:

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "电脑操作",
-    "description": "Codex 风格的电脑操作（computer use）。为 agent 增加两套 MCP 工具：通过 Cua Driver 控制本机桌面（截图、点击、输入、滚动、按键、拖拽、列出窗口），以及通过 Playwright MCP 自动化 Chromium 浏览器（导航、截图、点击、输入、滚动、快照）。桌面控制需要 PATH 上有 cua-driver（执行 `pip install cua-driver`）；浏览器控制需要 Playwright 的 Chromium（执行 `npx playwright install chromium`）。工具以 mcp__cua-driver-mcp__* 和 mcp__playwright__* 形式出现。agent 可查看并操作本机桌面和浏览器（含截图与输入）；关闭该插件会同时移除两套工具。",
+    "description": "Codex 风格的电脑操作（computer use）。为 agent 增加两套 MCP 工具：通过 Cua Driver 控制本机桌面（截图、点击、输入、滚动、按键、拖拽、列出窗口），以及通过 Playwright MCP 自动化 Chromium 浏览器（导航、截图、点击、输入、滚动、快照）。两个引擎在首次激活时自动安装（cua-driver 用 pip，Playwright/Chromium 后台准备），失败可手动装。工具默认锁定：需在输入框「+ → 指令」里选 computer-use（或输入 /computer-use）解锁后，agent 才能操控电脑；任务结束自动收回。工具以 mcp__cua-driver-mcp__* 和 mcp__playwright__* 形式出现；关闭该插件会同时移除两套工具。",
     "detail": "docs/DETAIL.zh.md"
   }
 }
